@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "lib": ["ES2020"],
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "declaration": false,
+    
+    // **CRITICAL: Either set verbatimModuleSyntax to false OR remove it**
+    "verbatimModuleSyntax": false,  // <-- Change this to false
+    
+    // Alternative: Use these settings instead if you want ESM
+    // "module": "ESNext",
+    // "moduleResolution": "node",
+    // and add "type": "module" to package.json
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
